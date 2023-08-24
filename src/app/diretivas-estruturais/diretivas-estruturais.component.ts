@@ -26,4 +26,18 @@ export class DiretivasEstruturaisComponent implements OnInit {
       this.conditionClick = true;
     }
   }
+
+  public list: Array<{ nome: string; idade: number }> = [
+    { nome: 'David', idade: 19 },
+    { nome: 'Maria', idade: 18 },
+    { nome: 'Carlos', idade: 39 },
+  ];
+
+  public onClickAddList = () => {
+    this.list.push({ nome: 'Nayara', idade: 31 });
+  };
+
+  public onClickEventList = (event: number) => {
+    this.list.splice(event, 1);
+  };
 }
