@@ -27,4 +27,11 @@ export class DiretivasAtributosComponent implements OnInit {
       }
     }, 2000);
   }
+
+  public nome: string = '';
+  public list: Array<{ nome: string }> = [];
+  public salvar() {
+    this.list.push({ nome: this.nome });
+    this.nome = '';
+  }
 }
