@@ -34,4 +34,6 @@ export class DiretivasAtributosComponent implements OnInit {
     this.list.push({ nome: this.nome });
     this.nome = '';
   }
+
+  public date: Date = new Date();
 }

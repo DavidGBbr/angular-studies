@@ -1,4 +1,4 @@
-<ng-content select="h1"></ng-content>
+<!-- <ng-content select="h1"></ng-content>
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut possimus atque nulla tenetur incidunt reprehenderit voluptatum fuga mollitia nam tempora quae dicta illum obcaecati culpa, cum, sed ipsa. Accusantium!
   Neque corrupti ex iste debitis et recusandae accusantium? Facere, at, necessitatibus voluptatum voluptas sequi nostrum rem neque optio corrupti in quo blanditiis ad consequatur delectus assumenda! Tempora fugit nobis laudantium.
@@ -7,4 +7,13 @@
   Doloribus iusto in commodi officiis repellat ratione, iure velit dolorum sit amet eum obcaecati earum voluptas. Eius, doloremque ducimus itaque esse architecto officia repellat impedit? Quas praesentium nobis iusto harum?</p>
 
 <ng-content select="h3"></ng-content>
-<ng-content select="hr"></ng-content>
+<ng-content select="hr"></ng-content> -->
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">
+  {{item.nome | uppercase}}
+</li>
+
+{{date | date: "dd/MM/yyyy"}}
