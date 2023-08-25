@@ -1,20 +1,10 @@
-<!-- <div *ngIf="nome !='David' ">
-  <p [ngClass]="{'active':valor, 'disabled':!valor}">ngClass</p>
-  <p [ngStyle]="{'height': heightPx, 'background': backgroundColor}">ngStyle</p>
+<ng-content select="h1"></ng-content>
 
-</div>
-<hr>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aut possimus atque nulla tenetur incidunt reprehenderit voluptatum fuga mollitia nam tempora quae dicta illum obcaecati culpa, cum, sed ipsa. Accusantium!
+  Neque corrupti ex iste debitis et recusandae accusantium? Facere, at, necessitatibus voluptatum voluptas sequi nostrum rem neque optio corrupti in quo blanditiis ad consequatur delectus assumenda! Tempora fugit nobis laudantium.
+  Quae minus dolore laborum ipsum voluptatibus mollitia, nihil nulla molestiae dolores corporis amet assumenda dolor architecto voluptatem a, sit qui sint explicabo voluptate quos incidunt minima? Natus molestiae quod dicta!
+  Asperiores quod laudantium aliquid consequuntur provident tempora sit soluta incidunt. Tenetur dolorum magnam nisi est vero omnis voluptatem recusandae quasi? Eaque beatae quas fugit exercitationem modi optio numquam eligendi quisquam!
+  Doloribus iusto in commodi officiis repellat ratione, iure velit dolorum sit amet eum obcaecati earum voluptas. Eius, doloremque ducimus itaque esse architecto officia repellat impedit? Quas praesentium nobis iusto harum?</p>
 
-<input [(ngModel)]="nome"> {{nome}}
-<button (click)="salvar()">Salvar</button>
-
-<li *ngFor="let item of list">{{item.nome}}</li> -->
-
-<ng-template ngFor let-item [ngForOf]="list">
-  <p>
-    {{item.nome}}
-  </p>
-</ng-template>
-
-<input [(ngModel)]="nome">
-<button (click)="salvar()">Salvar</button>
+<ng-content select="h3"></ng-content>
+<ng-content select="hr"></ng-content>
